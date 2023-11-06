@@ -1,10 +1,13 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+"use client";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import styles from "./style.module.scss";
 
 import { AnimatePresence } from "framer-motion";
 import Nav from "./nav";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Rounded from "../../common/RoundedButton";
+import Magnetic from "../../common/Magnetic";
 
 export default function Index() {
   const header = useRef(null);
